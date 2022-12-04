@@ -85,38 +85,110 @@ body {
 #container {
   padding: 2vh;
 }
-h1{
+
+h1 {
   font-family: var(--font_titel);
 }
-h2, h3, h4, h5, h6{
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font_subtitel);
 }
-#nav_links{
+
+#nav_links {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--kleur_paars) ;
+  background-color: var(--kleur_paars);
+
 }
-#nav_links a{
+
+#nav_web,
+#nav_spider {
+  position: absolute;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+#nav_web {
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 177px;
+  background-image: url(../img/menu_web.png);
+}
+
+#nav_spider {
+  top: 171px;
+  right: 83.1px;
+  width: 43px;
+  height: 489px;
+  background-image: url(../img/spider.png);
+  transition: transform 0.2s linear;
+  animation: spin_bewegen 20s linear infinite;
+  transform: translateY(-429px);
+}
+
+@keyframes spin_bewegen {
+  0% {
+    transform: translateY(-400px);
+  }
+  10% {
+    transform: translateY(-400px);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+
+  90% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+
+}
+
+#nav_links a {
+  display: block;
   text-decoration: none;
-}
-#nav_links a:hover,
-#nav_links a h3{
+  font-family: var(--font_subtitel);
   color: var(--kleur_wit);
-  padding: 2rem 0 2rem 5rem;
+  padding: 2rem 0 2rem 10rem;
   font-size: 5rem;
 }
-#nav_links a h3:first-child{
-  margin-top: 3rem;
+
+#nav_links a:first-of-type {
+  margin-top: 5rem;
 }
-#nav_icon_openend{
-position: absolute;
-bottom: 1rem;
-right: 1rem;
+
+#nav_links a:hover {
+  color: var(--kleur_zwart);
+
 }
-#nav_icon_openend:hover{
+
+#nav_links a:active {
+  color: var(--kleur_rood);
+}
+
+
+
+#nav_icon_openend {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#nav_icon_openend:hover {
   cursor: pointer;
 }
 
