@@ -1,0 +1,145 @@
+/* © Victor Loots, 2022
+/*
+/* Fonts */
+
+@font-face {
+  font-family: 'aganregular';
+  src: url('../fonts/agane_55_roman-webfont.eot');
+  src: url('../fonts/agane_55_roman-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/agane_55_roman-webfont.woff2') format('woff2'),
+    url('../fonts/agane_55_roman-webfont.woff') format('woff'),
+    url('../fonts/agane_55_roman-webfont.ttf') format('truetype'),
+    url('../fonts/agane_55_roman-webfont.svg#aganregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fiddums_familyregular';
+  src: url('../fonts/fiddums_family-webfont.eot');
+  src: url('../fonts/fiddums_family-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fiddums_family-webfont.woff2') format('woff2'),
+    url('../fonts/fiddums_family-webfont.woff') format('woff'),
+    url('../fonts/fiddums_family-webfont.ttf') format('truetype'),
+    url('../fonts/fiddums_family-webfont.svg#fiddums_familyregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gothic_ultra_otregular';
+  src: url('../fonts/gothic_ultra_ot-webfont.eot');
+  src: url('../fonts/gothic_ultra_ot-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gothic_ultra_ot-webfont.woff2') format('woff2'),
+    url('../fonts/gothic_ultra_ot-webfont.woff') format('woff'),
+    url('../fonts/gothic_ultra_ot-webfont.ttf') format('truetype'),
+    url('../fonts/gothic_ultra_ot-webfont.svg#gothic_ultra_otregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+/* Variabelen */
+:root {
+  --font_titel: "fiddums_familyregular", Georgia, serif;
+  --font_subtitel: "gothic_ultra_otregular", Verdana, sans-serif;
+  --font-brood: "aganregular", Verdana, sans-serif;
+  --kleur_wit: #F8F7F3;
+  --kleur_zwart: #170004;
+  --kleur_rood: #51000F;
+  --kleur_paars: #400030;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+
+/*
+/* Standards */
+html {
+  font-size: 62.5%;
+  /* (62.5/100) * 16px = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  color: var(--kleur_zwart);
+  background-color: var(--kleur_wit);
+  font-family: var(--font-brood);
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+#container {
+  padding: 2vh;
+}
+h1{
+  font-family: var(--font_titel);
+}
+h2, h3, h4, h5, h6{
+  font-family: var(--font_subtitel);
+}
+#nav_links{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--kleur_paars) ;
+}
+#nav_links a{
+  text-decoration: none;
+}
+#nav_links a:hover,
+#nav_links a h3{
+  color: var(--kleur_wit);
+  padding: 2rem 0 2rem 5rem;
+  font-size: 5rem;
+}
+#nav_links a h3:first-child{
+  margin-top: 3rem;
+}
+#nav_icon_openend{
+position: absolute;
+bottom: 1rem;
+right: 1rem;
+}
+#nav_icon_openend:hover{
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--font_subtitel);
+  padding: 4rem 0 2rem 0;
+}
+
+
+@media (min-width: 620px) {
+  #container {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  #container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+}
