@@ -163,8 +163,8 @@ h6 {
   text-decoration: none;
   font-family: var(--font_subtitel);
   color: var(--kleur_wit);
-  padding: 2rem 0 2rem 10rem;
-  font-size: 5rem;
+  padding: 2rem 0 2rem 8rem;
+  font-size: 8rem;
 }
 
 #nav_links a:first-of-type {
