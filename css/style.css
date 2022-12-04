@@ -97,6 +97,19 @@ h5,
 h6 {
   font-family: var(--font_subtitel);
 }
+#nav_icon_closed{
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 124px;
+  background-color: var(--kleur_paars);
+  border-radius: 35px 35px 0 0;
+  background-image: url(../img/mansion_icon.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
 
 #nav_links {
   position: fixed;
@@ -106,6 +119,10 @@ h6 {
   height: 100vh;
   background-color: var(--kleur_paars);
 
+}
+
+.verborgen{
+  display: none;
 }
 
 #nav_web,
@@ -160,6 +177,7 @@ h6 {
 
 #nav_links a {
   display: block;
+  width: 250px;
   text-decoration: none;
   font-family: var(--font_subtitel);
   color: var(--kleur_wit);
@@ -171,7 +189,7 @@ h6 {
   margin-top: 5rem;
 }
 
-#nav_links a:hover {
+#nav_links a:hover, #nav_icon_openend:hover {
   color: var(--kleur_zwart);
 
 }
@@ -184,11 +202,15 @@ h6 {
 
 #nav_icon_openend {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0.5rem;
+  right: 2rem;
+  color: var(--kleur_wit);
+  font-family: var(--font_subtitel);
+  font-size: 6rem;
+  font-weight: 900;
 }
 
-#nav_icon_openend:hover {
+#nav_icon_openend:hover, #nav_icon_closed {
   cursor: pointer;
 }
 
