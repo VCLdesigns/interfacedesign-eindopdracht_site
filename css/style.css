@@ -495,6 +495,34 @@ h1 {
   color: var(--kleur_wit);
 }
 
+#gomez blockquote {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10rem 1rem;
+  padding: 1rem;
+  quotes: "\201C" "\201D";
+}
+
+blockquote:before {
+  color: var(--kleur_rood);
+  content: open-quote;
+  font-family: var(--font_subtitel);
+  font-size: 6em;
+  line-height: 0.1;
+  margin-right: 0.6rem;
+  vertical-align: -4rem;
+}
+
+blockquote:after {
+  color: var(--kleur_rood);
+  content: close-quote;
+  font-family: var(--font_subtitel);
+  font-size: 6em;
+  line-height: 0.1;
+  margin-left: 0.4rem;
+  vertical-align: -4rem;
+}
+
 
 footer {
   display: flex;
@@ -504,13 +532,16 @@ footer {
 }
 
 @media (min-width: 481px) {
-  #nav_icon_closed, #nav_icon_openend {
+
+  #nav_icon_closed,
+  #nav_icon_openend {
     display: none;
   }
+
   .verborgen {
     display: block;
   }
-  
+
   #nav_links {
     position: relative;
     height: 10rem;
@@ -518,32 +549,34 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
   #nav_links a {
     display: inline-block;
     width: 20%;
-  padding: 0.5rem;
-  font-size: 5.5rem;
-  z-index: 2;
+    padding: 0.5rem;
+    font-size: 5.5rem;
+    z-index: 2;
   }
-  
+
   #nav_links a:first-of-type {
     margin-top: 0;
   }
-  #nav_links a:last-of-type{
+
+  #nav_links a:last-of-type {
     margin-right: 100px;
   }
-  
+
   #nav_web {
     width: 123px;
     height: 100px;
     background-size: contain;
   }
-  
+
   #nav_spider {
     top: 95px;
     right: 36.1px;
   }
-  
+
 
   #container {
     display: grid;
@@ -564,11 +597,13 @@ footer {
   }
 
   #family h1,
+  #gomez blockquote,
   #kids h3,
   picture {
     place-self: center;
   }
-  #page_about{
+
+  #page_about {
     margin: 0 auto;
     max-width: 1200px;
   }
@@ -591,6 +626,10 @@ footer {
     grid-area: 2/6/3/12;
   }
 
+  #family p:last-of-type {
+    grid-area: 3/6/4/12;
+  }
+
   #gomez h3 {
     grid-area: 1/2/2/12;
     place-self: center right;
@@ -603,6 +642,11 @@ footer {
   #gomez picture {
     grid-area: 2/2/3/6;
   }
+
+  #gomez blockquote {
+    grid-area: 3/2/4/13;
+  }
+
 
   #morticia h3 {
     grid-area: 1/2/2/12;
@@ -620,25 +664,30 @@ footer {
   #kids h3 {
     grid-area: 1/2/2/12;
   }
-  #kids picture:first-of-type{
+
+  #kids picture:first-of-type {
     grid-area: 2/2/3/6;
   }
-  #kids picture:last-of-type{
+
+  #kids picture:last-of-type {
     grid-area: 2/6/3/12;
   }
-  #kids p:first-of-type{
+
+  #kids p:first-of-type {
     grid-area: 3/2/3/6;
   }
-  #kids p:last-of-type{
+
+  #kids p:last-of-type {
     grid-area: 3/6/3/12;
   }
 
 
 
-  .img_portrait{
+  .img_portrait {
     max-height: 600px;
   }
-  .img_landscape{
+
+  .img_landscape {
     max-width: 600px;
   }
 
