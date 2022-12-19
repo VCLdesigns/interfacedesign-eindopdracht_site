@@ -64,6 +64,10 @@ img {
   display: block;
 }
 
+h2,h3,h4,h5,h6{
+  font-family: var(--font_subtitel);
+}
+
 
 /*
 /* Standards */
@@ -188,8 +192,6 @@ body {
   color: var(--kleur_rood);
 }
 
-
-
 #nav_icon_openend {
   position: absolute;
   bottom: 0.5rem;
@@ -222,19 +224,62 @@ h1 {
   background-color: var(--kleur_zwart);
   overflow: hidden;
 }
-
+#bat_swarm{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 33px;
+  background-image: url(../img/bat_swarm.png);
+  animation: batsFlying 10s linear infinite;
+  transition: all 0.2s linear;
+}
+@keyframes batsFlying{
+  0%{
+    bottom: 0;
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+    bottom: 0;
+  left: 0;
+  opacity: 1;
+  }
+  95%{
+    bottom: 50%;
+  left: 75%;
+  opacity: 1;
+  }
+  100%{
+    bottom: 50%;
+  left: 75%;
+  opacity: 0.1;
+  }
+}
 #maan {
   position: absolute;
-  left: calc(50% - 125px);
-  top: calc(50% - 125px);
-  width: 250px;
-  height: 250px;
+  left: calc(50% - 150px);
+  bottom: calc(-50% - 150px);
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: #F8F9EC;
   box-shadow: 0 0 10px #F8F9EC,
     0 0 60px #F8F9EC,
     0 0 117px #eaf0a9,
     inset 0 0 80px #eaf0a9;
+    animation: opkomen 10s linear forwards;
+}
+@keyframes opkomen {
+  0% {
+    bottom: calc(-50% - 150px);
+    
+  }
+  100% {
+    bottom: calc(50% - 150px);
+
+  }
+
 }
 
 .sterren {
@@ -243,8 +288,9 @@ h1 {
   height: 2px;
   border-radius: 50%;
   background-color: #F8F9EC;
-  box-shadow: 1px 1px 10px #F8F9EC
+  box-shadow: 1px 1px 10px rgb(248, 249, 236)
 }
+
 @keyframes knipperen {
   0% {
     opacity: 1;
@@ -272,15 +318,42 @@ h1 {
   background-image: url(../img/mansion_ground.jpeg);
 }
 
+#mansion_lights_house_overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: houseLights 10s linear infinite;
+
+}
+
 #mansion_lights_house {
   position: absolute;
   bottom: 0;
   left: calc(50% - 162px);
   width: 280px;
   height: 196px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
+@keyframes houseLights {
+  0% {
+    background: rgba(224, 157, 55, 1);
+  }
+
+  50% {
+    background: rgba(224, 157, 55, 0.4)
+  }
+
+  100% {
+    background: rgba(224, 157, 55, 1);
+  }
+}
+#mansion_lights_tower_overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: towerLights 10s linear infinite;
+}
 #mansion_lights_tower {
   position: absolute;
   bottom: 0;
@@ -289,13 +362,49 @@ h1 {
   height: 287px;
   background-color: black;
 }
+@keyframes towerLights {
+  0%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  46%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  47%{
+    background-color: rgba(248, 249, 236,1);
+  }
+  48%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  49%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  50%{
+    background-color: rgba(248, 249, 236,1);
+  }
+  51%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  52%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  53%{
+    background-color: rgba(248, 249, 236,1);
+  }
+  54%{
+    background-color: rgba(248, 249, 236,0);
+  }
+  100%{
+    background-color: rgba(248, 249, 236,0);
+  }
 
+  
+}
 #mansion {
   position: absolute;
   left: calc(50% - 230px);
   bottom: -22px;
   width: 460px;
-  
+
   height: 384px;
   background-image: url(../img/mansion_mobile.png);
   background-repeat: no-repeat;
@@ -303,9 +412,68 @@ h1 {
   background-position: center bottom;
 }
 
+/* About */
+#page_about h1{
+  color: var(--kleur_paars);
+}
+#page_about h2{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  padding: 2rem 1rem 3rem 1rem;
+}
+#page_about h3{
+
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+#page_about p{
+  padding: 1rem;
+}
+
+
+#page_about p:first-letter{
+  color: var(--kleur_paars);
+  float: left;
+  line-height: 0.6;
+  font-family: var(--font_titel);
+  font-size: 7rem;
+  font-weight: 500;
+  padding: 3rem 2rem 0.1rem 0;
+}
+#page_about img{
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 4rem 0;
+}
+
+#page_about strong, #page_about em{
+  color: var(--kleur_rood);
+}
+
+#page_about a{
+  text-decoration: none;
+  color: var(--kleur_paars);
+}
+#page_about a:hover, #page_about a:active{
+background-color: var(--kleur_paars);
+color: var(--kleur_wit);
+}
+
+
 footer {
   display: flex;
   justify-content: space-around;
   font-family: var(--font_subtitel);
   padding: 4rem 0 2rem 0;
+}
+
+@media (min-width: 481px) {
+  #container{
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }

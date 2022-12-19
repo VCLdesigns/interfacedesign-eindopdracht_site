@@ -17,7 +17,7 @@ function menuToggle(evt) {
 
 for (var i = 0; i < deSterren.length; i++) {
     // left Moet van 0% tot 100% gaan
-    var randomLeft = Math.random() * 100;
+    var randomLeft = Math.random() * 99;
     // top moet van 0px tot 500px gaan
     var randomTop = Math.random() * 500
     var randomWidthHeight = Math.random() * 3 + 1;
