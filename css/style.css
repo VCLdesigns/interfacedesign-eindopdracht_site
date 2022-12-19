@@ -64,7 +64,11 @@ img {
   display: block;
 }
 
-h2,h3,h4,h5,h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font_subtitel);
 }
 
@@ -210,7 +214,7 @@ body {
 h1 {
   font-family: var(--font_titel);
   word-spacing: 1rem;
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: 500;
   text-align: center;
   padding: 2rem 0;
@@ -224,7 +228,8 @@ h1 {
   background-color: var(--kleur_zwart);
   overflow: hidden;
 }
-#bat_swarm{
+
+#bat_swarm {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -234,28 +239,33 @@ h1 {
   animation: batsFlying 10s linear infinite;
   transition: all 0.2s linear;
 }
-@keyframes batsFlying{
-  0%{
+
+@keyframes batsFlying {
+  0% {
     bottom: 0;
-  left: 0;
-  opacity: 1;
+    left: 0;
+    opacity: 1;
   }
-  90%{
+
+  90% {
     bottom: 0;
-  left: 0;
-  opacity: 1;
+    left: 0;
+    opacity: 1;
   }
-  95%{
+
+  95% {
     bottom: 50%;
-  left: 75%;
-  opacity: 1;
+    left: 75%;
+    opacity: 1;
   }
-  100%{
+
+  100% {
     bottom: 50%;
-  left: 75%;
-  opacity: 0.1;
+    left: 75%;
+    opacity: 0.1;
   }
 }
+
 #maan {
   position: absolute;
   left: calc(50% - 150px);
@@ -268,13 +278,15 @@ h1 {
     0 0 60px #F8F9EC,
     0 0 117px #eaf0a9,
     inset 0 0 80px #eaf0a9;
-    animation: opkomen 10s linear forwards;
+  animation: opkomen 10s linear forwards;
 }
+
 @keyframes opkomen {
   0% {
     bottom: calc(-50% - 150px);
-    
+
   }
+
   100% {
     bottom: calc(50% - 150px);
 
@@ -318,7 +330,7 @@ h1 {
   background-image: url(../img/mansion_ground.jpeg);
 }
 
-#mansion_lights_house_overlay{
+#mansion_lights_house_overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -348,12 +360,14 @@ h1 {
     background: rgba(224, 157, 55, 1);
   }
 }
-#mansion_lights_tower_overlay{
+
+#mansion_lights_tower_overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   animation: towerLights 10s linear infinite;
 }
+
 #mansion_lights_tower {
   position: absolute;
   bottom: 0;
@@ -362,43 +376,55 @@ h1 {
   height: 287px;
   background-color: black;
 }
+
 @keyframes towerLights {
-  0%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  46%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  47%{
-    background-color: rgba(248, 249, 236,1);
-  }
-  48%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  49%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  50%{
-    background-color: rgba(248, 249, 236,1);
-  }
-  51%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  52%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  53%{
-    background-color: rgba(248, 249, 236,1);
-  }
-  54%{
-    background-color: rgba(248, 249, 236,0);
-  }
-  100%{
-    background-color: rgba(248, 249, 236,0);
+  0% {
+    background-color: rgba(248, 249, 236, 0);
   }
 
-  
+  46% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+  47% {
+    background-color: rgba(248, 249, 236, 1);
+  }
+
+  48% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+  49% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+  50% {
+    background-color: rgba(248, 249, 236, 1);
+  }
+
+  51% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+  52% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+  53% {
+    background-color: rgba(248, 249, 236, 1);
+  }
+
+  54% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+  100% {
+    background-color: rgba(248, 249, 236, 0);
+  }
+
+
 }
+
 #mansion {
   position: absolute;
   left: calc(50% - 230px);
@@ -413,54 +439,60 @@ h1 {
 }
 
 /* About */
-#page_about h1{
+#page_about h1 {
   color: var(--kleur_paars);
 }
-#page_about h2{
+
+#page_about h2 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 900;
   letter-spacing: 0.2rem;
   padding: 2rem 1rem 3rem 1rem;
 }
-#page_about h3{
 
-  font-size: 4rem;
+#page_about h3 {
+
+  font-size: 6rem;
   font-weight: 700;
   padding: 2rem 1rem 3rem 1rem;
 }
 
-#page_about p{
+#page_about p {
   padding: 1rem;
 }
 
 
-#page_about p:first-letter{
+#page_about p:first-letter {
   color: var(--kleur_paars);
   float: left;
   line-height: 0.6;
-  font-family: var(--font_titel);
-  font-size: 7rem;
-  font-weight: 500;
-  padding: 3rem 2rem 0.1rem 0;
+  font-family: var(--font_subtitel);
+  font-size: 10rem;
+  font-weight: 900;
+  padding: 2rem 2rem 0.1rem 0;
 }
-#page_about img{
+
+#page_about img {
   width: 100%;
   height: auto;
   margin: 2rem 0 4rem 0;
 }
 
-#page_about strong, #page_about em{
+#page_about strong,
+#page_about em {
   color: var(--kleur_rood);
 }
 
-#page_about a{
+#page_about a {
   text-decoration: none;
   color: var(--kleur_paars);
 }
-#page_about a:hover, #page_about a:active{
-background-color: var(--kleur_paars);
-color: var(--kleur_wit);
+
+#page_about a:hover,
+#page_about a:active {
+  background-color: var(--kleur_paars);
+  color: var(--kleur_wit);
 }
 
 
@@ -472,8 +504,142 @@ footer {
 }
 
 @media (min-width: 481px) {
-  #container{
+  #nav_icon_closed, #nav_icon_openend {
+    display: none;
+  }
+  .verborgen {
+    display: block;
+  }
+  
+  #nav_links {
+    position: relative;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #nav_links a {
+    display: inline-block;
+    width: 20%;
+  padding: 0.5rem;
+  font-size: 5.5rem;
+  z-index: 2;
+  }
+  
+  #nav_links a:first-of-type {
+    margin-top: 0;
+  }
+  #nav_links a:last-of-type{
+    margin-right: 100px;
+  }
+  
+  #nav_web {
+    width: 123px;
+    height: 100px;
+    background-size: contain;
+  }
+  
+  #nav_spider {
+    top: 95px;
+    right: 36.1px;
+  }
+  
+
+  #container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5rem;
+  }
+
+  header {
+    grid-area: 1/1/2/13;
+  }
+
+  main {
+    grid-area: 2/1/3/13;
+  }
+
+  footer {
+    grid-area: 3/1/4/13;
+  }
+
+  #family h1,
+  #kids h3,
+  picture {
+    place-self: center;
+  }
+  #page_about{
     margin: 0 auto;
     max-width: 1200px;
   }
+
+  #page_about section {
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 1rem;
+  }
+
+  #family h1 {
+    grid-area: 1/1/2/13;
+  }
+
+  #family p {
+    grid-area: 2/2/3/6;
+  }
+
+  #family picture {
+    grid-area: 2/6/3/12;
+  }
+
+  #gomez h3 {
+    grid-area: 1/2/2/12;
+    place-self: center right;
+  }
+
+  #gomez p {
+    grid-area: 2/6/3/12;
+  }
+
+  #gomez picture {
+    grid-area: 2/2/3/6;
+  }
+
+  #morticia h3 {
+    grid-area: 1/2/2/12;
+    place-self: center left;
+  }
+
+  #morticia p {
+    grid-area: 2/2/3/6;
+  }
+
+  #morticia picture {
+    grid-area: 2/6/3/12;
+  }
+
+  #kids h3 {
+    grid-area: 1/2/2/12;
+  }
+  #kids picture:first-of-type{
+    grid-area: 2/2/3/6;
+  }
+  #kids picture:last-of-type{
+    grid-area: 2/6/3/12;
+  }
+  #kids p:first-of-type{
+    grid-area: 3/2/3/6;
+  }
+  #kids p:last-of-type{
+    grid-area: 3/6/3/12;
+  }
+
+
+
+  .img_portrait{
+    max-height: 600px;
+  }
+  .img_landscape{
+    max-width: 600px;
+  }
+
 }
