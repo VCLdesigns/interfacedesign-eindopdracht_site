@@ -4,7 +4,7 @@ var navMenu = document.querySelector("#nav_links");
 var deNacht = document.querySelector("#nacht_kader");
 var deSterren = document.querySelectorAll(".sterren");
 var deHuisLichten = document.querySelector("#mansion_lights_house");
-var deTorenLichten = document.querySelector("#mansion_lights_tower");0
+var deTorenLichten = document.querySelector("#mansion_lights_tower"); 0
 
 navIconClosed.addEventListener("click", menuToggle);
 navIconOpened.addEventListener("click", menuToggle);
@@ -28,5 +28,34 @@ for (var i = 0; i < deSterren.length; i++) {
     deSterren[i].style.top = randomTop + "px";
     deSterren[i].style.animation = "knipperen 5s ease-in infinite";
     deSterren[i].style.animationDelay = (i - 100) + "s";
+}
+
+/* Music */
+var musicButton = document.querySelector("#music_button");
+musicButton.addEventListener("click", startMusic);
+function startMusic(evt) {
+    var audio = new Audio('../audio/The-Addams-Family-Theme-Song.mp3');
+    audio.play();
+}
+
+/* Back to Top Button */
+
+var backToTop = document.querySelector("#back_to_top");
+
+backToTop.addEventListener("click", terugNaarBoven);
+function terugNaarBoven(evt) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function () {
+    scrollFunction()
+}
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
 }
 

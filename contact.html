@@ -13,11 +13,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
     <title>Contact</title>
+    <script src="https://kit.fontawesome.com/4d4614c788.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div id="container">
-        <div id="nav_icon_closed"></div>
+        <div id="nav_icon_closed"> = <br> =</div>
         <header>
             <nav>
                 <div id="nav_links" class="verborgen">
@@ -30,14 +32,61 @@
                     <div id="nav_icon_openend" class="verborgen"> X</div>
                 </div>
             </nav>
-
         </header>
         <main>
+            <h1>Contact the Family</h1>
+            <div id="contact_adress">
+                <h3>Find Us</h3>
+                <p>The Addams Family lived on 001 Cemetery Lane, adjacent to a swamp and graveyard.
+                </p>
+                <p>But you can reach us right here in LA, at 21 Chester Place.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.5489526777787!2d-118.27851829999999!3d34.029787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7e8687dc3b5%3A0xc07ec0712eada59f!2s21%20Chester%20Pl%2C%20Los%20Angeles%2C%20CA%2090007%2C%20USA!5e0!3m2!1sen!2sbe!4v1673257056842!5m2!1sen!2sbe"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contact_socials">
+                <div id="chat_box">
+                    <h3>Chat With Us</h3>
+                    <a href=" https://wa.me/32123456789" title="Chat with Us"> <i class="fa fa-whatsapp"></i></a>
+                    <a href=" https://www.twitter.com/The_addams_family" target="_blank">
+                    <i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div id="social_box">
+                    <h3>Find Us</h3>
+                    <a href="https://www.facebook.com/The_addams_family" target="_blank" title="Our Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/The_addams_family/" target="_blank" title="Our Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="contact_form">
+                <h3>Mail Us</h3>
+                <div id="form_container">
+                    <form action="contact.php" method="post" target="_blank">
+                        <label for="Name">Your Name</label>
+                        <input type="text" id="Name" name="Name" placeholder="Morticia Addams" pattern=[A-Z\sa-z]{3,20}
+                            required>
+                        <label for="Email">Your E-mail</label>
+                        <input type="email" id="Email" name="Email" placeholder="Morticia.Addams@email.com" required>
+                        <label for="Message">Ask your question</label>
+                        <textarea id="Message" name="Message" placeholder="I wanted to know about.." style="height: 200px"
+                            required></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
 
         </main>
         <footer>
-            <h6>Bart Victor Loots &copy 2022</h6>
-            <h6>Interfacedesign @ Encora</h6>
+            <div id="footer_bottom">
+                <h6>Bart Victor Loots &copy 2023</h6>
+                <h6>Interfacedesign @ Encora</h6>
+            </div>
+            <button id="back_to_top" title="Back to top">Top</button>
+
         </footer>
     </div>
 
