@@ -468,6 +468,9 @@ h1 {
   color: var(--kleur_wit);
   margin-bottom: 2rem;
 }
+#music_button:hover{
+  cursor: pointer;
+}
 
 /* About */
 #page_about h1 {
