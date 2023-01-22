@@ -30,13 +30,7 @@ for (var i = 0; i < deSterren.length; i++) {
     deSterren[i].style.animationDelay = (i - 100) + "s";
 }
 
-/* Music */
-var musicButton = document.querySelector("#music_button");
-musicButton.addEventListener("click", startMusic);
-function startMusic(evt) {
-    var audio = new Audio('../audio/The-Addams-Family-Theme-Song.mp3');
-    audio.play();
-}
+
 
 /* Back to Top Button */
 

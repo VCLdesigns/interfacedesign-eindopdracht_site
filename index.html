@@ -155,34 +155,40 @@
                 <h2><i class="fa-solid fa-music"></i> <br> The Addams Family Theme <br> <i
                         class="fa-solid fa-music"></i>
                 </h2>
-                <img id="family_snap" src="img/family_snap.gif" alt="Family Snap" title="SNap Snap" class="verborgen"
+                <img id="family_snap" src="img/family_snap.gif" alt="Family Snap" title="Snap Snap" class="verborgen"
                     width="500" height="298">
                 <div id="music_button">Press to Play <br> <i class="fa-solid fa-play"></i> </div>
 
-                <p>They're creepy and they're kooky <br>
-                    Mysterious and spooky <br>
-                    They're all together ooky <br>
-                    The Addams family <br>
-                    <br>
-                    Their house is a museum <br>
-                    When people come to see 'em <br>
-                    They really are a screaming <br>
-                    The Addams family <br>
-                    <br>
-                    Neat <br>
-                    Sweet <br>
-                    Petite <br>
-                    <br>
-                    So, get a witch's shawl on <br>
-                    A broomstick you can crawl on <br>
-                    We're gonna pay a call on <br>
-                    The Addams family <br>
-                    <br>
+                <p>
                     They're creepy and they're kooky <br>
                     Mysterious and spooky <br>
                     They're all together ooky <br>
                     The Addams family <br>
-                    <br>
+                </p>
+                <p>
+                    Their house is a museum <br>
+                    When people come to see 'em <br>
+                    They really are a screaming <br>
+                    The Addams family <br>
+                </p>
+                <p>
+                    Neat <br>
+                    Sweet <br>
+                    Petite <br>
+                </p>
+                <p>
+                    So, get a witch's shawl on <br>
+                    A broomstick you can crawl on <br>
+                    We're gonna pay a call on <br>
+                    The Addams family <br>
+                </p>
+                <p>
+                    They're creepy and they're kooky <br>
+                    Mysterious and spooky <br>
+                    They're all together ooky <br>
+                    The Addams family <br>
+                </p>
+                <p>
                     Strange <br>
                     Deranged <br>
                     The Addams family
@@ -220,6 +226,15 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script>
+        /* Music */
+        var musicButton = document.querySelector("#music_button");
+        musicButton.addEventListener("click", startMusic);
+        function startMusic(evt) {
+            var audio = new Audio('../audio/The-Addams-Family-Theme-Song.mp3');
+            audio.play();
+        }
+    </script>
 
 </body>
 
