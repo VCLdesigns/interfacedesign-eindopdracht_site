@@ -505,10 +505,6 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
 /* About */
 
 
@@ -893,7 +889,7 @@ footer h6 {
 
   #family_snap {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin: 1rem auto;
   }
