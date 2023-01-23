@@ -8,7 +8,7 @@
     <meta name="description" content="Exercises for my education">
     <meta name="author" content="Bart Victor Loots">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
@@ -34,73 +34,102 @@
             </nav>
         </header>
         <main>
-            <h1>The Family Timeline</h1>
+            <div id="max_width_container">
+                <h1>The Family Timeline</h1>
+                <div id="timeline_content">
+                    <div id="the_addams_family_1964" class="timeline_item">
+                        <div class="timeline_date">1964 - 1966</div>
+                        <h3><i class="fa-solid fa-cross"></i> The Addams Family: TV series</h3>
+                        <picture>
+                            <source media="(max-width:480px)" srcset="img/timeline/the_addams_family_1964_mobile.jpg">
+                            <source media="(min-width:481px)" srcset="img/timeline/the_addams_family_1964.jpg">
+                            <img src="img/timeline/the_addams_family_1964.jpg" alt="The Addams Family"
+                                title="The Addams Family" width="1200" height="900">
+                        </picture>
 
-            <div id="timeline_content">
-                <div id="the_addams_family_1964" class="timeline_item">
-                    <div class="timeline_date">1964 - 1966</div>
-                    <h3>The Addams Family: TV series</h3>
-                    <img src="img/timeline/the_addams_family_1964.jpg" alt="The Addams Family" title="The Addams Family"
-                        width="2560" height="1920">
-                    <div class="columns">
-                        <p>Macabre/black comedy sitcom based on Charles Addams' New Yorker cartoons.
-                        </p>
-                        <p> The 30-minute
-                            television series was responsible for taking the unnamed characters in the single-panel gag
-                            cartoons and giving them names, back stories and a household setting. </p>
+                        <div class="columns">
+                            <p><strong>Macabre/black comedy sitcom </strong>based on Charles Addams' New Yorker
+                                cartoons.
+                            </p>
+                            <p> The 30-minute
+                                television series was responsible for taking the unnamed characters in the single-panel
+                                gag
+                                cartoons and giving them names, back stories and a household setting. </p>
+                        </div>
+                    </div>
+                    <div id="the_addams_family_1991" class="timeline_item">
+                        <div class="timeline_date">1991</div>
+                        <h3><i class="fa-solid fa-cross"></i> The Addams Family</h3>
+                        <picture>
+                            <source media="(max-width:480px)" srcset="img/timeline/the_addams_family_1991_mobile.jpg">
+                            <source media="(min-width:481px)" srcset="img/timeline/the_addams_family_1991.jpg">
+                            <img src="img/timeline/the_addams_family_1991.jpg" alt="The Addams Family"
+                                title="The Addams Family" width="1200" height="1777">
+                        </picture>
+
+                        <div class="columns">
+                            <p>The Addams Family is an American <strong>supernatural black comedy film</strong> .
+                            </p>
+                            <p> The film focuses on a bizarre, macabre, aristocratic family who <em>reconnect</em> with
+                                what
+                                they
+                                believe
+                                to be a long-lost relative, Gomez's brother Fester Addams. </p>
+                        </div>
+                    </div>
+                    <div id="the_addams_family_1993" class="timeline_item">
+                        <div class="timeline_date">1993</div>
+                        <h3><i class="fa-solid fa-cross"></i> The Addams Family Values</h3>
+                        <picture>
+                            <source media="(max-width:480px)" srcset="img/timeline/the_addams_family_values_mobile.jpg">
+                            <source media="(min-width:481px)" srcset="img/timeline/the_addams_family_values.jpg">
+                            <img src="img/timeline/the_addams_family_values.jpg" alt="The Addams Family"
+                                title="The Addams Family" width="1200" height="1773">
+                        </picture>
+
+                        <div class="columns">
+                            <p>Addams Family Values <strong>the sequel</strong> to The Addams Family movie.
+                            </p>
+                            <p> The film's plot revolves around Debbie Jellinsky, a serial killer who marries Fester
+                                Addams
+                                intending to <em>murder</em> him for his inheritance, while teenagers Wednesday and
+                                Pugsley
+                                are sent
+                                to
+                                summer camp. </p>
+                        </div>
+                    </div>
+                    <div id="wednesday_2022" class="timeline_item">
+                        <div class="timeline_date">2022 - <br> ...</div>
+                        <h3><i class="fa-solid fa-cross"></i> Wednesday</h3>
+                        <picture>
+                            <source media="(max-width:480px)" srcset="img/timeline/wednesday_mobile.jpg">
+                            <source media="(min-width:481px)" srcset="img/timeline/wednesday.jpg">
+                            <img src="img/timeline/wednesday.jpg" alt="The Addams Family" title="The Addams Family"
+                                width="1200" height="1778">
+                        </picture>
+
+                        <div class="columns">
+                            <p>Wednesday is an American coming-of-age <strong>
+                                    supernatural comedy horror streaming television
+                                    series
+                                </strong>.
+                            </p>
+                            <p>
+                                It revolves around Wednesday Addams, who attempts <em>to solve</em> a monster mystery at
+                                her
+                                school.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div id="the_addams_family_1991" class="timeline_item">
-                    <div class="timeline_date">1991</div>
-                    <h3>The Addams Family</h3>
-                    <img src="img/timeline/the_addams_family_1991.jpg" alt="The Addams Family" title="The Addams Family"
-                        width="1979" height="2931">
-                    <div class="columns">
-                        <p>The Addams Family is an American supernatural black comedy film.
-                        </p>
-                        <p> The film focuses on a bizarre, macabre, aristocratic family who reconnect with what they
-                            believe
-                            to be a long-lost relative, Gomez's brother Fester Addams. </p>
-                    </div>
-                </div>
-                <!--TODO Border img wegknippen-->
-                <div id="the_addams_family_1993" class="timeline_item">
-                    <div class="timeline_date">1993</div>
-                    <h3>The Addams Family Values</h3>
-                    <img src="img/timeline/the_addams_family_values.jpg" alt="The Addams Family"
-                        title="The Addams Family" width="1500" height="2200">
-                    <div class="columns">
-                        <p>Addams Family Values the sequel to The Addams Family movie.
-                        </p>
-                        <p> The film's plot revolves around Debbie Jellinsky, a serial killer who marries Fester Addams
-                            intending to murder him for his inheritance, while teenagers Wednesday and Pugsley are sent
-                            to
-                            summer camp. </p>
-                    </div>
-                </div>
-
-                <div id="wednesday_2022" class="timeline_item">
-                    <div class="timeline_date">2022 - <br> ...</div>
-                    <h3>Wednesday</h3>
-                    <img src="img/timeline/wednesday.jpg" alt="The Addams Family" title="The Addams Family" width="1500"
-                        height="2222">
-
-                    <div class="columns">
-                        <p>Wednesday is an American coming-of-age supernatural comedy horror streaming television
-                            series.
-                        </p>
-                        <p>
-                            It revolves around Wednesday Addams, who attempts to solve a monster mystery at her school.
-                        </p>
-                    </div>
-
+                <div id="call_to_action">
+                    <h4><i class="fa-solid fa-skull"></i> I need to ask a question!
+                    </h4>
+                    <a id="call_to_action_button" href="contact.html" title="Go to the next page">Next >></a>
                 </div>
             </div>
-
-            <div id="call_to_action">
-                <h4>I need to ask a question!</h4>
-                <a id="call_to_action_button" href="contact.html" title="Go to the next page">Next >></a>
-            </div>
+            <div id="black_cat" class="verborgen"></div>
 
 
         </main>

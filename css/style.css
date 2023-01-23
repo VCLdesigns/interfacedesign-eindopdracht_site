@@ -105,6 +105,11 @@ h3 {
   padding: 2rem 1rem 3rem 1rem;
 }
 
+h3 svg {
+  font-size: 4rem;
+  color: var(--kleur_rood);
+}
+
 h4 {
   font-size: 4rem;
 }
@@ -660,9 +665,16 @@ iframe {
 }
 
 #contact_socials svg {
-  color: var(--kleur_rood);
+  color: var(--kleur_zwart);
   width: 5rem;
   height: 5rem;
+  transition: transform 0.3s linear;
+  transform: scale(0.8);
+}
+
+#contact_socials svg:hover {
+  color: var(--kleur_rood);
+  transform: scale(1);
 }
 
 input[type=text],
@@ -770,6 +782,12 @@ footer h6 {
   color: var(--kleur_wit);
   width: 5rem;
   height: 5rem;
+  transition: transform 0.3s linear;
+  transform: scale(0.8);
+}
+
+#footer_socials svg:hover {
+  transform: scale(1);
 }
 
 #footer_bottom {
@@ -805,6 +823,10 @@ footer h6 {
 /* Tablet Breakpoint*/
 
 @media (min-width: 481px) {
+  img {
+
+    border-radius: 0.8rem;
+  }
 
   #nav_icon_closed,
   #nav_icon_openend {
@@ -828,7 +850,7 @@ footer h6 {
     text-align: center;
     width: 50px;
     padding: 0.5rem;
-    font-size: 3.5rem;
+    font-size: 4rem;
     z-index: 2;
     line-height: 100px;
   }
@@ -1008,6 +1030,19 @@ footer h6 {
     break-inside: avoid;
   }
 
+  #footer_socials {
+    justify-content: center;
+    gap: 5%;
+  }
+
+  #contact_socials svg,
+  #footer_socials svg {
+
+    width: 7.5rem;
+    height: 7.5rem;
+
+  }
+
   iframe {
     display: block;
     max-width: 600px;
@@ -1016,14 +1051,68 @@ footer h6 {
 
   #form_container {
     width: 80%;
+    margin-bottom: 500px;
+  }
+
+  main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #black_cat {
+    width: 485px;
+    height: 498px;
+    position: absolute;
+    bottom: 0;
+    left: -500px;
+    background-image: url(../img/black_cat_walking.gif);
+    transition: all 0.3s linear;
+    animation: walking 10s linear infinite;
+  }
+
+  @keyframes walking {
+    0% {
+      left: -750 px;
+      opacity: 1;
+    }
+
+    50% {
+      left: 150%;
+      opacity: 1;
+    }
+
+    51% {
+      left: 150%;
+      opacity: 0;
+    }
+
+    99% {
+      left: -750px;
+      opacity: 0;
+    }
+
+    100% {
+      left: -750px;
+      opacity: 1;
+    }
+
   }
 }
 
 /*Desktop Breakpoint*/
 @media (min-width: 768px) {
-  main {
+  #max_width_container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  #nav_links {
+    justify-content: center;
+    gap: 10%;
+  }
+
+  #nav_links a {
+    font-size: 5rem;
   }
 
   #nacht_kader {
@@ -1136,8 +1225,20 @@ footer h6 {
     font-size: 4rem;
   }
 
+  #footer_socials {
+    gap: 10%;
+  }
+
+  #contact_socials svg,
+  #footer_socials svg {
+
+    width: 10rem;
+    height: 10rem;
+
+  }
+
   #form_container {
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 300px auto;
   }
 }
