@@ -498,17 +498,27 @@ body {
 #music_button {
   display: block;
   width: 20rem;
-  height: auto;
+  height: 10rem;
   margin: 0 auto;
   padding: 0.5rem;
   border-radius: 0.6rem;
-  background-color: var(--kleur_zwart);
+  background-color: var(--kleur_rood);
   color: var(--kleur_wit);
   margin-bottom: 2rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #music_button:hover {
   cursor: pointer;
+}
+
+#music_button svg {
+  font-size: 5rem;
+  transform: scale(0.8);
+}
+
+#music_button:hover>svg {
+  transform: scale(1);
 }
 
 /* About */
@@ -522,6 +532,7 @@ body {
   font-size: 10rem;
   font-weight: 900;
   padding: 2rem 2rem 0.1rem 0;
+  text-shadow: 0.4rem 0.4rem 0 rgb(138, 141, 143);
 }
 
 #page_about img {
@@ -569,6 +580,8 @@ blockquote:before {
   margin-right: 0.6rem;
   vertical-align: -3rem;
 }
+
+
 
 cite {
   bottom: -2rem;
@@ -719,6 +732,7 @@ input[type=submit]:hover {
   padding: 2rem;
   text-align: center;
   margin: 10rem 0 20rem 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #call_to_action h4 {
@@ -816,7 +830,7 @@ footer h6 {
   padding: 1.5rem;
   border-radius: 1rem;
   font-size: 1.8rem;
-  box-shadow: 3px 3px 4px -1px black;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 #back_to_top:hover {
@@ -917,6 +931,16 @@ footer h6 {
     margin: 1rem auto;
   }
 
+  blockquote::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    width: 50px;
+    height: 300px;
+    background-image: url(../img/nav_background.png);
+  }
+
 
   #page_about section {
     display: grid;
@@ -960,7 +984,7 @@ footer h6 {
   }
 
   #gomez blockquote {
-    grid-area: 5/1/6/7;
+    grid-area: 5/2/6/7;
   }
 
   #morticia h3 {
@@ -980,7 +1004,7 @@ footer h6 {
   }
 
   #morticia blockquote {
-    grid-area: 5/1/6/7;
+    grid-area: 5/2/6/7;
   }
 
   #wednesday h3 {
@@ -1000,7 +1024,7 @@ footer h6 {
   }
 
   #wednesday blockquote {
-    grid-area: 5/1/6/7;
+    grid-area: 5/2/6/7;
   }
 
   blockquote {
