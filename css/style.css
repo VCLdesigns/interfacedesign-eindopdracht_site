@@ -714,7 +714,7 @@ input[type=submit]:hover {
   background-color: var(--kleur_paars);
   padding: 2rem;
   text-align: center;
-  margin: 10rem 0;
+  margin: 10rem 0 20rem 0;
 }
 
 #call_to_action h4 {
@@ -1043,6 +1043,10 @@ footer h6 {
 
   }
 
+  #contact_adress {
+    padding: 1rem;
+  }
+
   iframe {
     display: block;
     max-width: 600px;
@@ -1051,7 +1055,7 @@ footer h6 {
 
   #form_container {
     width: 80%;
-    margin-bottom: 500px;
+    margin: 0 auto 300px auto;
   }
 
   main {
@@ -1239,6 +1243,5 @@ footer h6 {
 
   #form_container {
     width: 60%;
-    margin: 0 auto 300px auto;
   }
 }
