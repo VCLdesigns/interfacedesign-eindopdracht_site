@@ -98,6 +98,7 @@ h2 {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
+
 h3 {
   font-size: 6rem;
   font-weight: 700;
@@ -544,6 +545,8 @@ body {
   font-size: 2.2rem;
   background-color: var(--kleur_paars);
   color: var(--kleur_wit);
+  padding: 0.5rem;
+  border-radius: 0.8rem;
 }
 
 blockquote {
@@ -705,6 +708,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   padding: 2rem;
   font-family: var(--font_subtitel);
+  font-size: 4rem;
 }
 
 #call_to_action {
@@ -836,6 +840,7 @@ footer h6 {
   .verborgen {
     display: block;
   }
+
 
   #nav_links {
     position: relative;
@@ -1071,7 +1076,7 @@ footer h6 {
     left: -500px;
     background-image: url(../img/black_cat_walking.gif);
     transition: all 0.3s linear;
-    animation: walking 10s linear infinite;
+    animation: walking 7s linear infinite;
   }
 
   @keyframes walking {
@@ -1176,6 +1181,7 @@ footer h6 {
 
   #call_to_action {
     border-radius: 1rem;
+    background-image: url(../img/nav_background.png);
   }
 
   #page_about img {
@@ -1243,5 +1249,9 @@ footer h6 {
 
   #form_container {
     width: 60%;
+  }
+
+  #black_cat {
+    animation: walking 10s linear infinite;
   }
 }
